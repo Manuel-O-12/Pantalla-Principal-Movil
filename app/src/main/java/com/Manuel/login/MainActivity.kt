@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
+/*@Composable
 fun LoginScreen(modifier: Modifier = Modifier) {
 
     Box(
@@ -165,6 +165,298 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 }
 
                 Spacer(modifier = Modifier.height(20.dp))
+            }
+        }
+    }
+}*/
+
+@Composable
+/*fun LoginScreen(modifier: Modifier = Modifier) {
+
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFF1E5BB2)),
+        contentAlignment = Alignment.Center
+    ) {
+
+        Box(
+            modifier = Modifier
+                .padding(24.dp)
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(30.dp))
+                .background(Color.White)
+                .padding(24.dp)
+        ) {
+
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Hello!",
+                    fontSize = 40.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
+
+                Spacer(modifier = Modifier.height(5.dp))
+
+                Text(
+                    text = "Sing in to your account",
+                    fontSize = 15.sp,
+                    color = Color.Gray
+                )
+
+                Spacer(modifier = Modifier.height(30.dp))
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "Name",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "Password",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Text(
+                    text = "You have forgotten your password",
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
+
+                Spacer(modifier = Modifier.height(30.dp))
+
+                // Sign Up
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.Blue),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "Login",
+                        color = Color.White,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Text(
+                    text = "Don't have in account? CREATE",
+                    fontSize = 12.sp,
+                    color = Color.Gray
+                )
+
+                Text(
+                    text = "Or",
+                    fontSize = 24.sp,
+                    color = Color.Gray,
+                    modifier = Modifier.offset(x = 6.dp, y = 10.dp),
+
+                )
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(16.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+
+                    Image(
+                        painter = painterResource(id = R.mipmap.facebook_foreground),
+                        contentDescription = null,
+                        modifier = Modifier.size(60.dp)
+                    )
+
+                    Image(
+                        painter = painterResource(id = R.mipmap.googleplus_foreground),
+                        contentDescription = null,
+                        modifier = Modifier.size(60.dp)
+                    )
+
+                    Image(
+                        painter = painterResource(id = R.mipmap.linkedi_foreground),
+                        contentDescription = null,
+                        modifier = Modifier.size(60.dp)
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(20.dp))
+            }
+        }
+    }
+}*/
+
+fun LoginScreen(modifier: Modifier = Modifier) {
+
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFF1E5BB2)),
+        contentAlignment = Alignment.Center
+    ) {
+
+        Box(
+            modifier = Modifier
+                .padding(24.dp)
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(30.dp))
+                .background(Color.White)
+                .padding(24.dp)
+        ) {
+
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Create account",
+                    fontSize = 40.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
+
+                Spacer(modifier = Modifier.height(30.dp))
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "User Name",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+
+
+
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "Email",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "Password",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.White)
+                        .border(width = 2.dp, Color(0xFF1E5BB2), shape = RoundedCornerShape(25.dp)),
+                    contentAlignment = Alignment.TopStart
+                ) {
+                    Text(
+                        text = "Confirm Password",
+                        color = Color.Gray,
+                        fontSize = 15.sp,
+                        modifier = Modifier.offset(x = 30.dp, y = 15.dp),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(30.dp))
+
+                // Sign Up
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp))
+                        .background(Color.Blue),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "Create account",
+                        color = Color.White,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
             }
         }
     }
